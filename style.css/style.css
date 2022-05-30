@@ -1,0 +1,225 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: roboto, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(72, 77, 82);
+}
+.contenedor {
+    background-image: url(https://i.pinimg.com/236x/88/7a/6d/887a6d9c729450cca1d880997cbbc319.jpg);
+    margin: 0;
+    padding: 0.5rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-rows: auto 1fr auto auto auto;
+    min-height: 100vh;
+    grid-template-columns:1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "section" 
+    "aside"
+    "footer";
+}
+@media (min-width:480px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto 1fr;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "section aside"
+        "footer footer";
+    }
+}
+@media (min-width:768px){
+    .contenedor{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr auto auto auto;
+        grid-template-areas: 
+        "header header header"
+        "nav section aside"
+        "nav section aside"
+        "footer footer footer";
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+footer{
+    background-image: url(https://i.pinimg.com/236x/88/7a/6d/887a6d9c729450cca1d880997cbbc319.jpg);
+}
+.contenedor section{
+    height: 400px;
+    margin: 20px;
+}
+.contenedor aside{
+    height: 400px;
+    margin: 20px;
+}
+ul li{
+    display: inline;
+    margin: 20px;
+}   
+header {
+    border-top: solid 9px rgb(212, 27, 114);
+    border-right: solid 14px rgb(212, 27, 114);
+    border-bottom: solid 11px rgb(212, 27, 114);
+    border-left: solid 16px rgb(212, 27, 114);
+    background-color:rgba(247, 178, 51, 0.842);
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0 0.5rem 1rem black;
+} 
+.contenedorproductos{
+    background-color:rgba(247, 178, 51, 0.842);
+    margin: 0;
+    padding: 0.5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto 1fr auto auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "div"
+    "section"
+    "article"
+    "footer";
+}
+@media (min-width:480px){
+.contenedorproductos{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas: 
+    "div div"
+    "section section"
+    "article article"
+    "footer footer";
+}
+.row{
+    display: flex;
+    padding: 5rem;
+    justify-content: center;
+}
+}
+@media (min-width:768px){
+    .contenedorproductos{
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 1fr auto auto auto;
+        grid-template-areas: 
+        "div div div"
+        "section section section"
+        "article article article"
+        "footer footer footer";
+    }
+    .row{
+        display: flex;
+        padding: 5rem;
+        justify-content: center;
+    }
+}
+.card{
+    margin: 15px;
+    padding: 15px;
+    background: rgb(65, 60, 60); 
+}
+.card__title{
+    color: rgb(212, 27, 114);
+    font-style: italic;
+}
+.card__img{
+    width: 200px; height: 200px;
+}
+.contenedorsobrenosotros{
+    background-color:rgba(247, 178, 51, 0.842);
+    margin: 0;
+    padding: 0.5rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-rows: auto 1fr auto auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "div div"
+    "section section"
+    "section section"
+    "footer footer"; 
+}
+.contenedorcomprar{
+    background-color:rgba(247, 178, 51, 0.842);
+    margin: 0;
+    padding: 0.5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto 1fr auto auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "div div"
+    "section aside"
+    "section aside"
+    "footer footer";
+}
+.contenedorcontacto{
+    background-color:rgba(247, 178, 51, 0.842);
+    margin: 0;
+    padding: 0.5rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "div div"
+    "div div"
+    "footer footer";
+}
+.whatsapp-logo{
+    position: absolute
+}
+#oferta{
+    height: 250px;
+    animation: from-right 1.5s ease infinite alternate;
+}
+@keyframes from-right{
+    0%{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+#wpp, #ubicacion, #instagram{
+    height: 25px;
+}
+img{
+    max-width: 100%;
+}
+.img1{
+    width: 400px; height: 400px;
+}
+.subtitulo{
+font-size: 20.5px;
+}
+header{
+    grid-area: header;
+}
+nav{
+    grid-area: nav;
+}
+section{
+    grid-area: section;
+}
+footer{
+    grid-area: footer;
+}
+div{
+    grid-area: div;
+}
+aside{
+    grid-area: aside;
+}
