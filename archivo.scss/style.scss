@@ -229,13 +229,13 @@ aside{
     }
     @media (min-width:480px){
         .contenedorcomprar{
-            grid-template-columns: 1fr auto;
+            grid-template-columns: 1fr;
             grid-template-rows: auto auto auto 1fr;
             grid-template-areas: 
-            "div div"
-            "section section"
-            "aside aside"
-            "footer footer";
+            "div"
+            "section"
+            "aside"
+            "footer";
         }
     }
     @media (min-width:768px){
