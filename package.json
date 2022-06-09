@@ -1,0 +1,20 @@
+{
+  "name": "desarrolloweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+   "compile:sass": "sass --watch style.scss/style.scss style.css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeniseSille/DesarrolloWeb.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeniseSille/DesarrolloWeb/issues"
+  },
+  "homepage": "https://github.com/DeniseSille/DesarrolloWeb#readme"
+}
